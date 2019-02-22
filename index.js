@@ -5,6 +5,10 @@ function takeANumber(line, name){
 };
 
 function nowServing(){
+  if(!line.length){
+    return ("There is nobody waiting to be served!")
+  }
+  return `Currently serving ${line.shift()}.`
 
 }
 
@@ -18,4 +22,5 @@ function currentLine(line){
     numAndNames.push(`${i+1}. ${line[i]}`)
   }
   return `The line is currently: ${numAndNames.join(', ')}`
+
 };
