@@ -2,12 +2,20 @@ function takeANumber(line, name){
   line.push(name)
 
   return `Welcome, ${name}. You are number ${line.length} in line.`
-}
+};
 
 function nowServing(){
 
 }
 
-function currentLine(){
+function currentLine(line){
+  if(line.length === 0){
+    return "The line is currently empty."
+  }
 
-}
+  const numAndNames []
+  for( let i = 0, l = line.length; i < l; i++){
+    numAndNames.push(`${i+1}. ${line[i]}`)
+  }
+  return `The line is currently: ${numAndNames.join(', ')}`
+};
