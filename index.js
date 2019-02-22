@@ -10,7 +10,7 @@ function nowServing(){
   }
   return `Currently serving ${line.shift()}.`
 
-}
+};
 
 function currentLine(line){
   if(line.length === 0){
