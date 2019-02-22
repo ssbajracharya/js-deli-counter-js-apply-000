@@ -13,7 +13,7 @@ function currentLine(line){
     return "The line is currently empty."
   }
 
-  const numAndNames []
+  const numAndNames = []
   for( let i = 0, l = line.length; i < l; i++){
     numAndNames.push(`${i+1}. ${line[i]}`)
   }
